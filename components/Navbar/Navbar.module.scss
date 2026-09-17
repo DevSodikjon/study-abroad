@@ -1,0 +1,36 @@
+.header {
+  width: 100%;
+}
+
+.navbar {
+  // height: 80px;
+  margin: 30px auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 68px;
+
+  a {
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 400;
+
+    &:hover {
+      text-shadow: 0.8px 0 0 currentColor;
+    }
+  }
+  .active {
+    text-shadow: 0.8px 0 0 currentColor;
+  }
+  .apply {
+    border: 1px solid #717cff;
+    padding: 5px 30px;
+    border-radius: 6px;
+  }
+}
