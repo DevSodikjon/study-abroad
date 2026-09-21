@@ -1,12 +1,13 @@
 import styles from "./Hero.module.scss";
 
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Hero() {
   return (
-    <main>
+    <section className={styles.main}>
       <div className="container">
-        <div className="main">
+        <div className={styles.box}>
           <div className={styles.heroContent}>
             <h1>
               We Help to <span style={{ color: "#717CFF" }}>Build</span> <br />{" "}
@@ -36,9 +37,30 @@ export default function Hero() {
                 />
               </svg>
             </Link>
+
+            <div className={styles.social}>
+              <Image
+                src="/Icons/facebook.svg"
+                alt="Study Abroad"
+                width={10}
+                height={21}
+              />
+              <Image
+                src="/Icons/twitter.svg"
+                alt="Study Abroad"
+                width={21}
+                height={21}
+              />
+              <Image
+                src="/Icons/instagram.svg"
+                alt="Study Abroad"
+                width={21}
+                height={21}
+              />
+            </div>
           </div>
         </div>
       </div>
-    </main>
+    </section>
   );
 }

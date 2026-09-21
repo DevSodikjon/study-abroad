@@ -22,7 +22,7 @@ const navLinks = [
   },
   {
     label: "Our Services",
-    href: "/service",
+    href: "/services",
   },
   {
     label: "Responsibility",
@@ -60,7 +60,7 @@ const Navbar = () => {
                 key={link.href}
                 href={link.href}
                 className={`${pathname === link.href ? styles.active : ""} ${
-                  link.href === "/Apply" ? styles.apply : ""
+                  link.href === "/apply" ? styles.apply : ""
                 }`}
               >
                 {link.label}

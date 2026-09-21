@@ -1,3 +1,12 @@
+.main {
+  background-image: url("/images/hero.png");
+  background-size: 600px auto;
+  background-position: right -40%;
+  background-repeat: no-repeat;
+}
+.box {
+  display: flex;
+}
 .heroContent {
   width: 50%;
   margin-top: 100px;
@@ -28,6 +37,7 @@
     gap: 24px;
     width: fit-content;
     padding: 12px 34px;
+    margin-bottom: 101px;
     border-radius: 8px;
     background: #6c63ff;
     color: #ffffff;
@@ -38,4 +48,16 @@
       transform 0.25s ease,
       box-shadow 0.25s ease;
   }
+
+  .social {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 59px;
+  }
+}
+
+.heroImage {
+  width: 50%;
+  min-height: 500px;
 }

@@ -1,5 +1,5 @@
 
-export default function Responsibility() {
+export default function responsibility() {
   return (
     <div className="container">
       <h1>Responsibility</h1>
