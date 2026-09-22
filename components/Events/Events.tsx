@@ -38,6 +38,17 @@ const eventsData = [
       month: "Oct",
     },
   },
+  {
+    title: "Federation University, Australia",
+    subtitle:
+      "Maiores voluptas laboriosam non dolorum perferendis fuga repellat aut. Blanditiis quos in minus. Voluptatum quia quia voluptas voluptatem vero ex possimus. I",
+    start_time: "00 : 00 AM",
+    finish_time: "2 : 00 PM",
+    date: {
+      day: "17",
+      month: "Oct",
+    },
+  },
 ];
 
 const ITEMS_PER_SLIDE = 2;
