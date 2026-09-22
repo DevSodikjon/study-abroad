@@ -34,7 +34,7 @@ export default function News() {
         </div>
         <div className={styles.newsCard}>
           {newsData.map((news) => (
-            <div className={styles.card}>
+            <div className={styles.card} key={news.title}> 
               <div className={styles.cardImg}>
                 <Image
                   src={news.image}

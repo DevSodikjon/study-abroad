@@ -37,22 +37,6 @@ const universities = [
     name: "University of Texas",
     image: "/images/queensland.png",
   },
-  //   {
-  //   name: "University of SIngapure",
-  //   image: "/images/sydney.png",
-  // },
-  // {
-  //   name: "Monash california",
-  //   image: "/images/monash.png",
-  // },
-  // {
-  //   name: "University of Melbourne",
-  //   image: "/images/melbourne.png",
-  // },
-  // {
-  //   name: "University of Queensland",
-  //   image: "/images/queensland.png",
-  // },
 ];
 
 const ITEMS_PER_SLIDE = 4;
