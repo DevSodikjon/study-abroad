@@ -4,8 +4,11 @@ import { useEffect, useState } from "react";
 import styles from "@/components/Events/Events.module.scss";
 import Link from "next/link";
 
+let nextId = 1;
+
 const eventsData = [
   {
+    id: nextId++,
     title: "Macquarie University, Sydney, Australia",
     subtitle:
       "Maiores voluptas laboriosam non dolorum perferendis fuga repellat aut. Blanditiis quos in minus. Voluptatum quia quia voluptas voluptatem vero ex possimus. I",
@@ -17,6 +20,7 @@ const eventsData = [
     },
   },
   {
+     id: nextId++,
     title: "Federation University, Australia",
     subtitle:
       "Maiores voluptas laboriosam non dolorum perferendis fuga repellat aut. Blanditiis quos in minus. Voluptatum quia quia voluptas voluptatem vero ex possimus. I",
@@ -28,6 +32,7 @@ const eventsData = [
     },
   },
   {
+     id: nextId++,
     title: "Federation University, Australia",
     subtitle:
       "Maiores voluptas laboriosam non dolorum perferendis fuga repellat aut. Blanditiis quos in minus. Voluptatum quia quia voluptas voluptatem vero ex possimus. I",
@@ -39,6 +44,7 @@ const eventsData = [
     },
   },
   {
+    id: nextId++,
     title: "Federation University, Australia",
     subtitle:
       "Maiores voluptas laboriosam non dolorum perferendis fuga repellat aut. Blanditiis quos in minus. Voluptatum quia quia voluptas voluptatem vero ex possimus. I",
@@ -54,6 +60,7 @@ const eventsData = [
 const ITEMS_PER_SLIDE = 2;
 
 export default function Events() {
+
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const totalSlides = Math.ceil(eventsData.length / ITEMS_PER_SLIDE);
@@ -100,7 +107,7 @@ export default function Events() {
                       slideIndex * ITEMS_PER_SLIDE + ITEMS_PER_SLIDE,
                     )
                     .map((events) => (
-                      <div className={styles.card}>
+                      <div className={styles.card} key={events.id}>
                         <div className={styles.card_top}>
                           <div className={styles.date}>
                             <p className={styles.day}>{events.date?.day}</p>

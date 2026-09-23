@@ -74,7 +74,7 @@ export default function News() {
                 </p>
                 <h3>{news.title}</h3>
               </div>
-            </div>
+            </div>    
           ))}
         </div>
 
